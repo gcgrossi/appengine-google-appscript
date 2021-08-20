@@ -39,3 +39,5 @@ An engine used to render different HTML files for multipage Apps. In an anchor h
 
 and the function ```getScriptUrl()``` to construct the correct url to the ```Html_file``` to render. The function ```doGet(e)``` parses the get requests and renders the ```Html_file``` contained in the ```"page"``` attribute.
 
+### Home_Uikit.html
+a template HTML file with Google fonts and Uikit css stylesheet already loaded.
