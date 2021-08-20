@@ -21,6 +21,21 @@ Utilities functions used to find and retrieve different objects:
 - Database Worksheet columns
 
 Importand functions are:
+
 ```getFolderbyPath(folderpath)```
 
 find folders in drive from the "/" notation. ```folderpath``` is a folder path in the form ```parent/children/children``` 
+
+```getFileInFolder(folder,filename)```
+
+given an input folder and a filename retrieves the desired file.
+
+### Code.gs
+An engine used to render different HTML files for multipage Apps. In an anchor href attribute uses:
+
+```html
+<a id="homenav" href="<?= getScriptUrl(); ?>?page=Html_file"></a>
+```
+
+and the function ```getScriptUrl()``` to construct the correct url to the ```Html_file``` to render. The function ```doGet(e)``` parses the get requests and renders the ```Html_file``` contained in the ```"page"``` attribute.
+
