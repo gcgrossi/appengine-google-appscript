@@ -2,7 +2,7 @@ function doGet(e) {
   var page = e.parameter['page'];
   
   if (!page) {
-    return HtmlService.createTemplateFromFile("Home").evaluate().setSandboxMode(HtmlService.SandboxMode.IFRAME);
+    return HtmlService.createTemplateFromFile("Home_Uikit").evaluate().setSandboxMode(HtmlService.SandboxMode.IFRAME);
   }
   return loadForm(page);
 }
